@@ -1,0 +1,222 @@
+[
+  {
+    "id": 6190,
+    "date": "May 14, 2025, 5:22 PM",
+    "thread": 33,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "STONEHAGELU@polikonomou",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6191,
+    "date": "May 14, 2025, 5:23 PM",
+    "thread": 29,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "GOKULSID@system",
+    "username": "GOKULSID@system",
+    "message": "DMS Dao::select * from debug_logs where status='OK'",
+    "pageUrl": "/DFXdebug"
+  },
+  {
+    "id": 6192,
+    "date": "May 14, 2025, 5:24 PM",
+    "thread": 31,
+    "level": "INFO",
+    "logger": "AuthLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "User login success for userID=2345",
+    "pageUrl": "/DFXauth"
+  },
+  {
+    "id": 6193,
+    "date": "May 14, 2025, 5:25 PM",
+    "thread": 28,
+    "level": "ERROR",
+    "logger": "DebugLogger",
+    "exception": "TimeoutException",
+    "username": "GOKULSID@system",
+    "message": "Error: DB connection timeout after 5000ms",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6194,
+    "date": "May 14, 2025, 5:26 PM",
+    "thread": 34,
+    "level": "DEBUG",
+    "logger": "QueryLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "Query executed: SELECT TOP 10 * FROM sessions",
+    "pageUrl": "/DFXquery"
+  },
+  {
+    "id": 6195,
+    "date": "May 14, 2025, 5:27 PM",
+    "thread": 35,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "GOKULSID@system",
+    "username": "GOKULSID@system",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6196,
+    "date": "May 14, 2025, 5:28 PM",
+    "thread": 37,
+    "level": "INFO",
+    "logger": "SystemLogger",
+    "exception": "None",
+    "username": "Admin@console",
+    "message": "System initialized and running",
+    "pageUrl": "/system"
+  },
+  {
+    "id": 6197,
+    "date": "May 14, 2025, 5:29 PM",
+    "thread": 26,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "STONEHAGELU@polikonomou",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "Checking last session state: OK",
+    "pageUrl": "/session"
+  },
+  {
+    "id": 6198,
+    "date": "May 14, 2025, 5:30 PM",
+    "thread": 22,
+    "level": "ERROR",
+    "logger": "DebugLogger",
+    "exception": "NullPointerException",
+    "username": "GOKULSID@system",
+    "message": "Unhandled exception on GET /api/users",
+    "pageUrl": "/api/users"
+  },
+  {
+    "id": 6199,
+    "date": "May 14, 2025, 5:31 PM",
+    "thread": 15,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6200,
+    "date": "May 14, 2025, 5:32 PM",
+    "thread": 12,
+    "level": "INFO",
+    "logger": "QueryLogger",
+    "exception": "None",
+    "username": "admin@system",
+    "message": "Bulk import completed in 182ms",
+    "pageUrl": "/DFXimport"
+  },
+  {
+    "id": 6201,
+    "date": "May 14, 2025, 5:33 PM",
+    "thread": 18,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "Session refreshed successfully",
+    "pageUrl": "/DFXsession"
+  },
+  {
+    "id": 6202,
+    "date": "May 14, 2025, 5:34 PM",
+    "thread": 10,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "GOKULSID@system",
+    "username": "GOKULSID@system",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6203,
+    "date": "May 14, 2025, 5:35 PM",
+    "thread": 36,
+    "level": "ERROR",
+    "logger": "ErrorLogger",
+    "exception": "SQLException",
+    "username": "sqladmin@db",
+    "message": "Could not retrieve user profile from database",
+    "pageUrl": "/DFXsql"
+  },
+  {
+    "id": 6204,
+    "date": "May 14, 2025, 5:36 PM",
+    "thread": 24,
+    "level": "INFO",
+    "logger": "InfoLogger",
+    "exception": "None",
+    "username": "apiuser@frontend",
+    "message": "Frontend ping succeeded with 200 OK",
+    "pageUrl": "/DFXping"
+  },
+  {
+    "id": 6205,
+    "date": "May 14, 2025, 5:37 PM",
+    "thread": 20,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6206,
+    "date": "May 14, 2025, 5:38 PM",
+    "thread": 13,
+    "level": "ERROR",
+    "logger": "ErrorLogger",
+    "exception": "UnauthorizedException",
+    "username": "unknown",
+    "message": "Unauthorized access attempt blocked",
+    "pageUrl": "/DFXdenied"
+  },
+  {
+    "id": 6207,
+    "date": "May 14, 2025, 5:39 PM",
+    "thread": 17,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "GOKULSID@system",
+    "message": "Log rotation completed",
+    "pageUrl": "/DFXrotate"
+  },
+  {
+    "id": 6208,
+    "date": "May 14, 2025, 5:40 PM",
+    "thread": 14,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "STONEHAGELU@polikonomou",
+    "message": "select * from sm_usercheckout where userid=@uid and status='C'...",
+    "pageUrl": "/DFXcXc"
+  },
+  {
+    "id": 6209,
+    "date": "May 14, 2025, 5:41 PM",
+    "thread": 27,
+    "level": "DEBUG",
+    "logger": "DebugLogger",
+    "exception": "None",
+    "username": "Admin@console",
+    "message": "Cleanup completed without error",
+    "pageUrl": "/DFXcleanup"
+  }
+]

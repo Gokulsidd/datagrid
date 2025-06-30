@@ -1,0 +1,94 @@
+"use client";
+
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
+import { Button } from "@/components/ui/button";
+import {
+  CircleArrowDown,
+  FilterIcon,
+  MoreVertical,
+  SortAscIcon,
+  SortDescIcon,
+} from "lucide-react";
+import { useState } from "react";
+import { ColumnFilterPopover } from "./columnFilterPopover";
+
+interface ColumnMenuProps {
+  sortDirection: "asc" | "desc" | null;
+  onSortChange: (dir: "asc" | "desc" | null) => void;
+  // filterValues: string[];
+  // onFilterChange: (vals: string[]) => void;
+  columnType?: "string" | "enum" | "date"; // for future extension
+}
+
+export default function ColumnHeaderMenu({
+  sortDirection,
+  onSortChange,
+  // filterValues,
+  // onFilterChange,
+  columnType = "string",
+}: ColumnMenuProps) {
+  const [filterOpen, setFilterOpen] = useState(false);
+
+  return (
+    <Popover>
+      <PopoverTrigger asChild>
+        <Button size="icon" variant="ghost" className="ml-2 h-8 w-8">
+          <MoreVertical className="w-4 h-4" />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent
+        side="bottom"
+        align="end"
+        className="flex flex-col w-56 p-2 space-y-1 text-sm rounded-xl shadow-lg border-neutral-200"
+      >
+        <Button
+          variant="ghost"
+          onClick={() => onSortChange("asc")}
+          className="font-normal w-full flex justify-start items-center gap-3 px-3"
+        >
+          <SortAscIcon className="w-4 h-4 text-neutral-500" />
+          Sort Ascending
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => onSortChange("desc")}
+          className="font-normal w-full flex justify-start items-center gap-3 px-3"
+        >
+          <SortDescIcon className="w-4 h-4 text-neutral-500" />
+          Sort Descending
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => onSortChange(null)}
+          className="font-normal w-full flex justify-start items-center gap-3 px-3"
+        >
+          <CircleArrowDown className="w-4 h-4 text-neutral-500" />
+          Clear Sorting
+        </Button>
+        <Button
+          variant="ghost"
+          className="font-normal w-full flex justify-start items-center gap-3 px-3"
+          onClick={() => setFilterOpen(!filterOpen)}
+        >
+          <FilterIcon className="w-4 h-4 text-neutral-500" />
+          Filter Column
+        </Button>
+        {filterOpen && (
+          <div className="p-2 border-t border-neutral-200">
+            <ColumnFilterPopover
+              // initialValues={filterValues}
+              // onApplyAction={(vals) => {
+              //   onFilterChange(vals);
+              //   setFilterOpen(false);
+              // }}
+            />
+          </div>
+        )}
+      </PopoverContent>
+    </Popover>
+  );
+}
