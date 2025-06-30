@@ -23,7 +23,7 @@ export default function Home() {
       <div className="flex justify-between items-center w-full px-6 py-1 h-12 border-b border-gray-200">
         <section className="flex gap-2 items-center ">
           <AiOutlineDatabase size={16} />
-          <p className="text-slate-700">dfxapp/logs</p>
+          <p className="text-slate-700">dfxapp/documents</p>
         </section>
     
         <section className="flex gap-3 items-center text-muted-foreground">
