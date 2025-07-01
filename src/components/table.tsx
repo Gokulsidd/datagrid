@@ -221,37 +221,37 @@ function DraggableColumnHeader({ header, filter, onFilterChange }: { header: any
       ref={setNodeRef}
       style={style}
       colSpan={header.colSpan}
-      className="bg-muted p-0 text-sm text-gray-800"
+      className="bg-gray-50 p-0 text-xs font-medium text-gray-500 uppercase tracking-wider border-b border-gray-200"
     >
-      <div className="flex items-center justify-between px-2 h-full gap-2">
+      <div className="flex items-center justify-between px-3 py-3 h-full gap-2">
         <div className="flex items-center gap-1">
-          <GripVerticalIcon className="w-4 h-4 text-gray-400" {...attributes} {...listeners} />
+          <GripVerticalIcon className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-grab" {...attributes} {...listeners} />
           {flexRender(column.columnDef.header, header.getContext())}
         </div>
         <Popover>
           <PopoverTrigger asChild>
-            <Button size="icon" variant="ghost" className="h-6 w-6 p-0">
-              <MoreHorizontalIcon className="h-4 w-4 text-gray-500" />
+            <Button size="icon" variant="ghost" className="h-6 w-6 p-0 text-gray-500 hover:bg-gray-100">
+              <MoreHorizontalIcon className="h-4 w-4" />
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-52 p-2 space-y-2">
+          <PopoverContent className="w-52 p-1 space-y-1 bg-white shadow-lg rounded-md border border-gray-200">
             <Button
               variant="ghost"
-              className="w-full justify-start text-sm"
+              className="w-full justify-start text-sm text-gray-700 hover:bg-gray-100"
               onClick={() => column.toggleSorting(false)}
             >
               <ArrowUpIcon className="w-4 h-4 mr-2" /> Sort ascending
             </Button>
             <Button
               variant="ghost"
-              className="w-full justify-start text-sm"
+              className="w-full justify-start text-sm text-gray-700 hover:bg-gray-100"
               onClick={() => column.toggleSorting(true)}
             >
               <ArrowDownIcon className="w-4 h-4 mr-2" /> Sort descending
             </Button>
             <Button
               variant="ghost"
-              className="w-full justify-start text-sm"
+              className="w-full justify-start text-sm text-gray-700 hover:bg-gray-100"
               disabled={!column.getIsSorted()}
               onClick={() => column.clearSorting()}
             >
@@ -262,12 +262,12 @@ function DraggableColumnHeader({ header, filter, onFilterChange }: { header: any
                 value={filter}
                 onChange={(e) => onFilterChange(e.target.value)}
                 placeholder="Filter..."
-                className="text-sm"
+                className="text-sm px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
               />
             )}
             <Button
               variant="ghost"
-              className="w-full justify-start text-sm"
+              className="w-full justify-start text-sm text-gray-700 hover:bg-gray-100"
               onClick={() => column.toggleVisibility(false)}
             >
               <EyeOffIcon className="w-4 h-4 mr-2" /> Hide column

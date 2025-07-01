@@ -1607,6 +1607,1312 @@
             "tokens_matched": 0,
             "typo_prefix_score": 255
           }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1742543706",
+            "document_current_version": 0,
+            "document_id": "273736",
+            "document_modified_date": "1745522743",
+            "document_name": "summary of position.docx",
+            "document_source": "",
+            "id": "273736",
+            "lastupdated_datetime": 1750342601,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1742543706",
+                    "DocSize": "14775",
+                    "EntryID_str": "273736",
+                    "EntryName_str": "summary of position.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1745522743",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1745522743",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1733308633",
+            "document_current_version": 0,
+            "document_id": "255604",
+            "document_modified_date": "1743492838",
+            "document_name": "DataFabricx Company Profile - TH (2).docx",
+            "document_source": "",
+            "id": "255604",
+            "lastupdated_datetime": 1750342596,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {
+                "properties": {
+                  "Created Date": "Feb 10 2025 12:00AM",
+                  "Document Date": "Feb 10 2025 12:00AM"
+                }
+              },
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1733308633",
+                    "DocSize": "56287",
+                    "EntryID_str": "255604",
+                    "EntryName_str": "DataFabricx Company Profile - TH (2).docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492838",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743492839",
+                    "template": {
+                      "template_fields": {
+                        "Created Date": "Feb 10 2025 12:00AM",
+                        "Document Date": "Feb 10 2025 12:00AM"
+                      },
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              },
+              "versions": [
+                {
+                  "data": {
+                    "Created Date": "",
+                    "Document Date": ""
+                  },
+                  "version": 1
+                },
+                {
+                  "data": {
+                    "Created Date": "",
+                    "Document Date": ""
+                  },
+                  "version": 4
+                }
+              ]
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1737525780",
+            "document_current_version": 0,
+            "document_id": "256308",
+            "document_modified_date": "1743492838",
+            "document_name": "08.docx",
+            "document_source": "",
+            "id": "256308",
+            "lastupdated_datetime": 1750342528,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1737525780",
+                    "DocSize": "11467",
+                    "EntryID_str": "256308",
+                    "EntryName_str": "08.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492838",
+                    "PageCount": "0",
+                    "ParentId": "256296",
+                    "file_modified_date": "1743492839",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1740729692",
+            "document_current_version": 0,
+            "document_id": "273297",
+            "document_modified_date": "1743492837",
+            "document_name": "Release Document",
+            "document_source": "",
+            "id": "273297",
+            "lastupdated_datetime": 1750342600,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {
+                "properties": {
+                  "Amount": "dede",
+                  "Date": "Feb 28 2025 12:00AM",
+                  "Description": "12\\/n\\\\n12@12\\/n",
+                  "From Address": "sc",
+                  "Invoice No": "12232",
+                  "Purchase Order No": "2e2e2e2",
+                  "To Address": "dssd",
+                  "subject from email": "sce"
+                }
+              },
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1740729692",
+                    "DocSize": "13365",
+                    "EntryID_str": "273297",
+                    "EntryName_str": "Release Document",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492837",
+                    "PageCount": "1",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743492837",
+                    "template": {
+                      "template_fields": {
+                        "Amount": "dede",
+                        "Date": "Feb 28 2025 12:00AM",
+                        "Description": "12\\/n\\\\n12@12\\/n",
+                        "From Address": "sc",
+                        "Invoice No": "12232",
+                        "Purchase Order No": "2e2e2e2",
+                        "To Address": "dssd",
+                        "subject from email": "sce"
+                      },
+                      "template_name": "Invoices"
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              },
+              "versions": [
+                {
+                  "data": {
+                    "Amount": "dede",
+                    "Date": "",
+                    "Description": "12/n\\n12@12/n",
+                    "From Address": "sc",
+                    "Invoice No": "12232",
+                    "Purchase Order No": "2e2e2e2",
+                    "To Address": "dssd",
+                    "subject from email": "sce"
+                  },
+                  "version": 1
+                }
+              ]
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1740496294",
+            "document_current_version": 0,
+            "document_id": "273226",
+            "document_modified_date": "1743492833",
+            "document_name": "Datafabricx Company profile_v5.docx",
+            "document_source": "",
+            "id": "273226",
+            "lastupdated_datetime": 1750342596,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1740496294",
+                    "DocSize": "27648",
+                    "EntryID_str": "273226",
+                    "EntryName_str": "Datafabricx Company profile_v5.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492833",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743492833",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1740496518",
+            "document_current_version": 0,
+            "document_id": "273228",
+            "document_modified_date": "1743492831",
+            "document_name": "Datafabricx Company profile_v5 (2).docx",
+            "document_source": "",
+            "id": "273228",
+            "lastupdated_datetime": 1750342596,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1740496518",
+                    "DocSize": "27648",
+                    "EntryID_str": "273228",
+                    "EntryName_str": "Datafabricx Company profile_v5 (2).docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492831",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743492832",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1724412484",
+            "document_current_version": 0,
+            "document_id": "248306",
+            "document_modified_date": "1743492812",
+            "document_name": "Sprout Community.docx",
+            "document_source": "",
+            "id": "248306",
+            "lastupdated_datetime": 1750342601,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1724412484",
+                    "DocSize": "68206",
+                    "EntryID_str": "248306",
+                    "EntryName_str": "Sprout Community.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743492812",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743492812",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1742543193",
+            "document_current_version": 0,
+            "document_id": "273735",
+            "document_modified_date": "1743488160",
+            "document_name": "test document.docx",
+            "document_source": "",
+            "id": "273735",
+            "lastupdated_datetime": 1750342602,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1742543193",
+                    "DocSize": "12676",
+                    "EntryID_str": "273735",
+                    "EntryName_str": "test document.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1743488160",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1743488160",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1724413361",
+            "document_current_version": 0,
+            "document_id": "248307",
+            "document_modified_date": "1742920320",
+            "document_name": "Use Cases and Datafabricx SolutionV1.0.docx",
+            "document_source": "",
+            "id": "248307",
+            "lastupdated_datetime": 1750342602,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1724413361",
+                    "DocSize": "38138",
+                    "EntryID_str": "248307",
+                    "EntryName_str": "Use Cases and Datafabricx SolutionV1.0.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1742920320",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1742920321",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1739376695",
+            "document_current_version": 0,
+            "document_id": "271815",
+            "document_modified_date": "1745322230",
+            "document_name": "ABCD.docx",
+            "document_source": "",
+            "id": "271815",
+            "lastupdated_datetime": 1750342529,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {
+                "properties": {
+                  "Age": "271815.00000"
+                }
+              },
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1739376695",
+                    "DocSize": "20480",
+                    "EntryID_str": "271815",
+                    "EntryName_str": "ABCD.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1745322230",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1740412925",
+                    "template": {
+                      "template_fields": {
+                        "Age": "271815.00000"
+                      },
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              },
+              "versions": [
+                {
+                  "data": {
+                    "Age": ""
+                  },
+                  "version": 6
+                }
+              ]
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1719658506",
+            "document_current_version": 0,
+            "document_id": "119847",
+            "document_modified_date": "1740412385",
+            "document_name": "Datafabricx Company profile",
+            "document_source": "",
+            "id": "119847",
+            "lastupdated_datetime": 1750342595,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {
+                "properties": {
+                  "Classification": "Sensitive",
+                  "Department Name": "Analysis & Insight",
+                  "Document Date": "Jun 29 2024 12:00AM",
+                  "Document Sub Type": "R15. Receipts",
+                  "Document Sub Type 2": "",
+                  "Document Title": "Datafabricx Company profile",
+                  "Document Type": "T04. Transaction",
+                  "ES_Id": "",
+                  "First Partition Code": "",
+                  "Group Code": "",
+                  "NOM Repository Name": "",
+                  "Remarks": "",
+                  "Repository Type": "",
+                  "Sync": ""
+                }
+              },
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1719658506",
+                    "DocSize": "35153",
+                    "EntryID_str": "119847",
+                    "EntryName_str": "Datafabricx Company profile",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1740412385",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1740412385",
+                    "template": {
+                      "template_fields": {
+                        "Classification": "Sensitive",
+                        "Department Name": "Analysis & Insight",
+                        "Document Date": "Jun 29 2024 12:00AM",
+                        "Document Sub Type": "R15. Receipts",
+                        "Document Sub Type 2": "",
+                        "Document Title": "Datafabricx Company profile",
+                        "Document Type": "T04. Transaction",
+                        "ES_Id": "",
+                        "First Partition Code": "",
+                        "Group Code": "",
+                        "NOM Repository Name": "",
+                        "Remarks": "",
+                        "Repository Type": "",
+                        "Sync": ""
+                      },
+                      "template_name": "Department Document"
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              },
+              "versions": [
+                {
+                  "data": {
+                    "0659dea2f5644d34a5cf36e8ed5ee2dd": "",
+                    "2ff5b7f723f24b1baf45d2062be62164": "T04. Transaction",
+                    "51f36decd93f4c5ea1b62fd904883133": "R15. Receipts",
+                    "Classification": "Sensitive",
+                    "Department Name": "Analysis & Insight",
+                    "Document Sub Type 2": "",
+                    "Document Title": "Datafabricx Company profile",
+                    "ES_Id": "",
+                    "First Partition Code": "",
+                    "Group Code": "",
+                    "NOM Repository Name": "",
+                    "Remarks": "",
+                    "Repository Type": "",
+                    "Sync": ""
+                  },
+                  "version": 1
+                },
+                {
+                  "data": {
+                    "0659dea2f5644d34a5cf36e8ed5ee2dd": "",
+                    "2ff5b7f723f24b1baf45d2062be62164": "",
+                    "51f36decd93f4c5ea1b62fd904883133": "",
+                    "7375b1845eec4e1e93b97e5c1ff8cb0e": "",
+                    "Document Sub Type": "R15. Receipts",
+                    "Document Type": "T04. Transaction"
+                  },
+                  "version": 3
+                },
+                {
+                  "data": {
+                    "7375b1845eec4e1e93b97e5c1ff8cb0e": "",
+                    "Document Date": ""
+                  },
+                  "version": 4
+                }
+              ]
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1723556152",
+            "document_current_version": 0,
+            "document_id": "248103",
+            "document_modified_date": "1737951616",
+            "document_name": "Annex B Mandatory Documents.docx",
+            "document_source": "",
+            "id": "248103",
+            "lastupdated_datetime": 1750342594,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1723556152",
+                    "DocSize": "37347",
+                    "EntryID_str": "248103",
+                    "EntryName_str": "Annex B Mandatory Documents.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1737951616",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1737951617",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1737525739",
+            "document_current_version": 0,
+            "document_id": "256307",
+            "document_modified_date": "1737525739",
+            "document_name": "mydeen.docx",
+            "document_source": "",
+            "id": "256307",
+            "lastupdated_datetime": 1750342599,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1737525739",
+                    "DocSize": "4803",
+                    "EntryID_str": "256307",
+                    "EntryName_str": "mydeen.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1737525739",
+                    "PageCount": "0",
+                    "ParentId": "256296",
+                    "file_modified_date": "1737525740",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1732799271",
+            "document_current_version": 0,
+            "document_id": "255596",
+            "document_modified_date": "1733901851",
+            "document_name": "Document Pack - User Manual 28.11.docx",
+            "document_source": "",
+            "id": "255596",
+            "lastupdated_datetime": 1750342596,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1732799271",
+                    "DocSize": "4451291",
+                    "EntryID_str": "255596",
+                    "EntryName_str": "Document Pack - User Manual 28.11.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1733901851",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1733901852",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1732033176",
+            "document_current_version": 0,
+            "document_id": "255415",
+            "document_modified_date": "1732099259",
+            "document_name": "meeting minutes.docx",
+            "document_source": "",
+            "id": "255415",
+            "lastupdated_datetime": 1750342598,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1732033176",
+                    "DocSize": "96601",
+                    "EntryID_str": "255415",
+                    "EntryName_str": "meeting minutes.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1732099259",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1732033177",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1732031545",
+            "document_current_version": 0,
+            "document_id": "255413",
+            "document_modified_date": "1732100156",
+            "document_name": "Minutes.docx",
+            "document_source": "",
+            "id": "255413",
+            "lastupdated_datetime": 1750342599,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1732031545",
+                    "DocSize": "218744",
+                    "EntryID_str": "255413",
+                    "EntryName_str": "Minutes.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1732100156",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1732031546",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1723553971",
+            "document_current_version": 0,
+            "document_id": "248096",
+            "document_modified_date": "1728134253",
+            "document_name": "Enterprise Content Management Platform Information and Guidance.docx",
+            "document_source": "",
+            "id": "248096",
+            "lastupdated_datetime": 1750342597,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1723553971",
+                    "DocSize": "46526",
+                    "EntryID_str": "248096",
+                    "EntryName_str": "Enterprise Content Management Platform Information and Guidance.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1728134253",
+                    "PageCount": "4",
+                    "ParentId": "115862",
+                    "file_modified_date": "1728134253",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1727246458",
+            "document_current_version": 0,
+            "document_id": "248981",
+            "document_modified_date": "1727246459",
+            "document_name": "Market Financial Consulting Invoice",
+            "document_source": "",
+            "id": "248981",
+            "lastupdated_datetime": 1750342598,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1727246458",
+                    "DocSize": "65506",
+                    "EntryID_str": "248981",
+                    "EntryName_str": "Market Financial Consulting Invoice",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1727246459",
+                    "PageCount": "1",
+                    "ParentId": "116003",
+                    "file_modified_date": "1727246459",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1726040216",
+            "document_current_version": 0,
+            "document_id": "248898",
+            "document_modified_date": "1727776284",
+            "document_name": "Accounting Policies and Procedures Template.docx",
+            "document_source": "",
+            "id": "248898",
+            "lastupdated_datetime": 1750342529,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {
+                "properties": {
+                  "Access Dates": "Oct  1 2024 12:00AM",
+                  "Created Date": "Oct  1 2024 12:00AM",
+                  "Date": "Oct  1 2024 12:00AM",
+                  "Document Creation Date": "Oct  1 2024 12:00AM",
+                  "Document Date": "Oct  1 2024 12:00AM",
+                  "Document Modified Date": "Oct  1 2024 12:00AM",
+                  "Email Date": "Oct  1 2024 12:00AM",
+                  "Modified Date": "Oct  1 2024 12:00AM",
+                  "SyncDate": "Oct  1 2024 10:50AM",
+                  "fsCreationDate": "Oct  1 2024 12:00AM",
+                  "fsModifiedDate": "Oct  1 2024 12:00AM"
+                }
+              },
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1726040216",
+                    "DocSize": "16726",
+                    "EntryID_str": "248898",
+                    "EntryName_str": "Accounting Policies and Procedures Template.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/octet-stream",
+                    "ModifiedDate": "1727776284",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1726747366",
+                    "template": {
+                      "template_fields": {
+                        "Access Dates": "Oct  1 2024 12:00AM",
+                        "Created Date": "Oct  1 2024 12:00AM",
+                        "Date": "Oct  1 2024 12:00AM",
+                        "Document Creation Date": "Oct  1 2024 12:00AM",
+                        "Document Date": "Oct  1 2024 12:00AM",
+                        "Document Modified Date": "Oct  1 2024 12:00AM",
+                        "Email Date": "Oct  1 2024 12:00AM",
+                        "Modified Date": "Oct  1 2024 12:00AM",
+                        "SyncDate": "Oct  1 2024 10:50AM",
+                        "fsCreationDate": "Oct  1 2024 12:00AM",
+                        "fsModifiedDate": "Oct  1 2024 12:00AM"
+                      },
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              },
+              "versions": [
+                {
+                  "data": {
+                    "Created Date": "",
+                    "Modified Date": ""
+                  },
+                  "version": 3
+                },
+                {
+                  "data": {
+                    "0659dea2f5644d34a5cf36e8ed5ee2dd": "",
+                    "8a6946a190cd4ae8a18c6214e033bcd9": "",
+                    "Date": "",
+                    "Document Creation Date": "",
+                    "Document Modified Date": "",
+                    "Email Date": "",
+                    "SyncDate": "",
+                    "fsCreationDate": "",
+                    "fsModifiedDate": ""
+                  },
+                  "version": 4
+                },
+                {
+                  "data": {
+                    "0659dea2f5644d34a5cf36e8ed5ee2dd": "",
+                    "Document Modified Date": "",
+                    "SyncDate": ""
+                  },
+                  "version": 5
+                }
+              ]
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
+        },
+        {
+          "document": {
+            "document_created_by": "DATAFABRICX\\demouser",
+            "document_created_date": "1726040216",
+            "document_current_version": 0,
+            "document_id": "248900",
+            "document_modified_date": "1730726405",
+            "document_name": "API in Laserfiche Workflow.docx",
+            "document_source": "",
+            "id": "248900",
+            "lastupdated_datetime": 1750342594,
+            "ocr_data": "",
+            "ocr_status": "Not Started",
+            "system": {
+              "business": {},
+              "custom": {},
+              "lf": {
+                "file": {
+                  "properties": {
+                    "CreatedBy_str": "DATAFABRICX\\demouser",
+                    "CreatedDate": "1726040216",
+                    "DocSize": "1970121",
+                    "EntryID_str": "248900",
+                    "EntryName_str": "API in Laserfiche Workflow.docx",
+                    "Extension_str": "docx",
+                    "LFPath": "",
+                    "MimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "ModifiedDate": "1730726405",
+                    "PageCount": "0",
+                    "ParentId": "115862",
+                    "file_modified_date": "1726040217",
+                    "template": {
+                      "template_name": ""
+                    }
+                  }
+                }
+              },
+              "network": {
+                "file": {}
+              }
+            }
+          },
+          "highlight": {},
+          "highlights": [],
+          "text_match": 100,
+          "text_match_info": {
+            "best_field_score": "0",
+            "best_field_weight": 12,
+            "fields_matched": 4,
+            "num_tokens_dropped": 1,
+            "score": "100",
+            "tokens_matched": 0,
+            "typo_prefix_score": 255
+          }
         }
       ],
       "out_of": 3827,

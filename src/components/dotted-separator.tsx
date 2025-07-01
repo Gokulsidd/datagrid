@@ -11,10 +11,10 @@ interface DotterSeparatorProps {
 
 const DottedSeparator = ({
   className,
-  color = "#d4d4d8",
-  height = "1.5px",
-  dotSize = "2px",
-  gapSize = "6px",
+  color = "#a0a0a0",
+  height = "1px",
+  dotSize = "1px",
+  gapSize = "4px",
   direction = "horizontal",
 }: DotterSeparatorProps) => {
   const isHorizontal = direction === "horizontal";

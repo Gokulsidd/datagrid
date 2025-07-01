@@ -7,11 +7,11 @@ import { useHeaderStore } from "@/store/useHeaderStore";
 function Table({ className, ...props }: React.ComponentProps<"table">) {
   const { isHeaderVisible } = useHeaderStore();
   return (
-    <div className="relative w-full overflow-hidden rounded-md">
+    <div className="relative w-full overflow-hidden">
       <div className="overflow-auto bg-white">
         <table
           className={cn(
-            "w-full caption-bottom text-sm ",
+            "w-full caption-bottom text-sm",
             "border-collapse", // Essential for datagrid borders
             className
           )}
@@ -27,7 +27,7 @@ function TableHeader({ className, ...props }: React.ComponentProps<"thead">) {
     <thead
       className={cn(
         "[&_tr]:border-b [&_tr]:border-gray-200",
-        "sticky top-0 z-10 bg-gray-50",
+        "sticky top-0 z-10 ",
         className
       )}
       {...props}
@@ -66,7 +66,7 @@ function TableHead({ className, ...props }: React.ComponentProps<"th">) {
   return (
     <th
       className={cn(
-        "h-10 px-4 text-left align-middle font-medium text-gray-700",
+        "h-10 px-4 text-left align-middle font-medium",
         "[&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
         "border-r border-gray-200 last:border-r-0", // Vertical borders between headers
         "bg-gray-50",

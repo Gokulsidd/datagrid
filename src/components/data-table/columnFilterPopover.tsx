@@ -41,22 +41,22 @@ export function ColumnFilterPopover({
   
 
   return (
-    <div className="space-y-4 w-full p-1">
+    <div className="space-y-3 p-2">
       <div className="w-full">
         <ColumnFilterDropdown 
           tableData={tableData} 
           column={{ FieldName: tableData?.columns, FieldType: "Date" }} 
 />
       </div>
-      <div className="flex flex-col gap-3"> 
+      <div className="flex flex-col gap-2"> 
         <Input
         placeholder="Search..."
-        className="rounded-lg border-neutral-300"
+        className="rounded-md border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm"
         // value={search}
         // onChange={(e) => setSearch(e.target.value)}
       />
 
-      <div className="max-h-48 overflow-y-auto space-y-2 pr-2">
+      <div className="max-h-48 overflow-y-auto space-y-1 pr-2">
         {/* {filtered.map((val) => (
           <div
             key={val}
@@ -78,7 +78,7 @@ export function ColumnFilterPopover({
         size="sm"
         // onClick={() => onApplyAction(selected)}
         // disabled={!selected.length}
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-lg"
+        className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-md"
       >
         Apply Filter
       </Button>

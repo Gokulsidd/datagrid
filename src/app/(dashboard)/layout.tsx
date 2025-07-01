@@ -40,10 +40,10 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
 
       {/* Sidebar - floated above content */}
       <div
-        className={`fixed  -left-1 h-full z-50 transition-all duration-300 border-r border-gray-200
+        className={`fixed -left-1 h-full z-50 transition-all duration-300 bg-white border-r border-gray-200
           ${isHeaderVisible ? "top-14" : "top-0"}
-          ${isSidebarVisible ? "w-[264px]" : "w-0"}
-          ${sidebarFixed ? "" : isSidebarVisible ? "shadow-2xl" : ""}
+          ${isSidebarVisible ? "w-[240px]" : "w-0"}
+          ${sidebarFixed ? "" : isSidebarVisible ? "shadow-lg" : ""}
           overflow-hidden`}
         onMouseEnter={() => !sidebarFixed && setHovering(true)}
         onMouseLeave={() => !sidebarFixed && setHovering(false)}
@@ -53,7 +53,7 @@ const DashboardLayout = ({ children }: DashboardLayoutProps) => {
 
       {/* Main content - never shifts unless sidebar is fixed */}
       <div
-        className={`relative ${sidebarFixed ? "pl-[260px]" : ""}`}
+        className={`relative ${sidebarFixed ? "pl-[236px]" : ""}`}
         onMouseEnter={() => {
           if (isSidebarVisible) {
             setHovering(false);
