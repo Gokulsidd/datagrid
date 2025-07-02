@@ -66,7 +66,7 @@ export default function Home() {
         </section>
       </div>
       <div className="w-full h-full">
-        <DataTable />
+        <DataTable searchQuery={searchQuery} />
       </div>
     </main>
   );

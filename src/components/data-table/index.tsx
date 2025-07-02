@@ -67,9 +67,7 @@ function DraggableTableHead<T>({
     <TableHead
       ref={setNodeRef}
       style={style}
-      className={`relative flex items-center text-gray-800 group bg-gray-50 px-2 py-3 border-b border-gray-200 ${
-        isDragging ? "shadow-lg" : ""
-      }`}
+      className={`relative flex items-center text-gray-800 group bg-zinc-100/80 px-2 py-3 border-b border-gray-200 shadow-xs`}
     >
       <div className="flex items-center justify-between w-full overflow-hidden">
         <div className="flex items-center gap-0 text-gray-700 font-medium">
@@ -78,7 +76,7 @@ function DraggableTableHead<T>({
             {...listeners}
             className="cursor-grab active:cursor-grabbing text-gray-500 hover:text-gray-800"
           >
-            <GripVertical className="h-5 w-5" />
+            <GripVertical className="h-4 w-4" />
           </button>
           {header.isPlaceholder
             ? null
@@ -113,7 +111,11 @@ function DraggableTableHead<T>({
   );
 }
 
-const DataTable = () => {
+interface DataTableProps {
+  searchQuery: string;
+}
+
+const DataTable = ({ searchQuery }: DataTableProps) => {
   const { tableData, error } = useMockData();
   const [columnOrder, setColumnOrder] = useState<string[]>([]);
   const [draggedColumn, setDraggedColumn] = useState<string | null>(null);
@@ -122,10 +124,19 @@ const DataTable = () => {
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const data = useMemo(() => {
-    return (
-      tableData?.results?.[0]?.hits?.map((item: any) => item.document) || []
+    const rawData =
+      tableData?.results?.[0]?.hits?.map((item: any) => item.document) || [];
+
+    if (!searchQuery) {
+      return rawData;
+    }
+
+    return rawData.filter((row: any) =>
+      Object.values(row).some((value: any) =>
+        String(value).toLowerCase().includes(searchQuery.toLowerCase())
+      )
     );
-  }, [tableData]);
+  }, [tableData, searchQuery]);
 
   const columns = useMemo<ColumnDef<any>[]>(() => {
     const cols =
@@ -265,7 +276,7 @@ const DataTable = () => {
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody>
+            <TableBody>
             {table.getRowModel().rows.map((row, index) => (
               <TableRow
                 key={row.id}

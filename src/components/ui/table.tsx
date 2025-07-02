@@ -66,7 +66,7 @@ function TableHead({ className, ...props }: React.ComponentProps<"th">) {
   return (
     <th
       className={cn(
-        "h-10 px-4 text-left align-middle font-medium",
+        "h-9 px-4 text-left align-middle font-medium",
         "[&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]",
         "border-r border-gray-200 last:border-r-0", // Vertical borders between headers
         "bg-gray-50",

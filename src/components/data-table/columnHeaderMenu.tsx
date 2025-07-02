@@ -17,6 +17,7 @@ import { useState } from "react";
 import { ColumnFilterPopover } from "./columnFilterPopover";
 
 import { Column } from "@tanstack/react-table";
+import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 
 interface ColumnMenuProps {
   column: Column<any>;
@@ -35,11 +36,22 @@ export default function ColumnHeaderMenu({
 
   return (
     <Popover>
+        <Tooltip>
+          <TooltipTrigger asChild>
       <PopoverTrigger asChild>
-        <Button size="icon" variant="ghost" className="h-7 w-7 text-gray-600 hover:bg-gray-200 rounded-full">
-          <MoreVertical className="w-4 h-4" />
-        </Button>
+            <Button
+              size="icon"
+              variant="ghost"
+              className="h-7 w-7  hover:bg-transparent text-gray-400 hover:text-gray-500 rounded-full"
+            >
+              <MoreVertical className="w-4 h-4" />
+            </Button>
       </PopoverTrigger>
+          </TooltipTrigger>
+          <TooltipContent side="bottom">
+            Menu
+          </TooltipContent>
+        </Tooltip>
       <PopoverContent
         side="bottom"
         align="end"
