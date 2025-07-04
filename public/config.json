@@ -1,0 +1,5 @@
+{
+  "NEXT_PUBLIC_API_URL": "",
+  "GET_TABLE_COLLECTIONS_ENDPOINT": "/collections.json",
+  "GET_TABLE_DATA_ENDPOINT": "/tableData.json"
+}

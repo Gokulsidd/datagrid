@@ -29,6 +29,7 @@
     "@tanstack/match-sorter-utils": "^8.19.4",
     "@tanstack/react-table": "^8.21.3",
     "@tanstack/react-virtual": "^3.13.10",
+    "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",
     "date-fns": "^4.1.0",
     "handsontable": "^15.3.0",
