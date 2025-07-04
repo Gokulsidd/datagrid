@@ -31,6 +31,7 @@ export default function ColumnHeaderMenu({
   sortDirection,
   onSortChange,
   columnType = "string",
+  ...props
 }: ColumnMenuProps) {
   const [filterOpen, setFilterOpen] = useState(false);
 
@@ -90,8 +91,8 @@ export default function ColumnHeaderMenu({
           Filter Column
         </Button>
         {filterOpen && (
-          <div className="p-2 border-t border-gray-200 mt-1">
-            <ColumnFilterPopover />
+          <div className="border-t border-gray-200 mt-1">
+            <ColumnFilterPopover column={column} />
           </div>
         )}
       </PopoverContent>

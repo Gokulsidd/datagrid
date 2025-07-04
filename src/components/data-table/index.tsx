@@ -1,4 +1,4 @@
-import useMockData, { collection } from "@/hooks/useMockData";
+import useMockData from "@/hooks/useMockData";
 import {
   Table,
   TableBody,
@@ -8,14 +8,16 @@ import {
   TableRow,
 } from "../ui/table";
 import ColumnHeaderMenu from "./columnHeaderMenu";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, useRef, useCallback } from "react";
 import {
+  Cell, // Import Cell
   CellContext,
   ColumnDef,
   getCoreRowModel,
   useReactTable,
   SortingState,
   getSortedRowModel,
+  Header, // Import Header
 } from "@tanstack/react-table";
 import { Tooltip, TooltipContent, TooltipTrigger } from "../ui/tooltip";
 import {
@@ -36,48 +38,51 @@ import {
 } from "@dnd-kit/sortable";
 import { useSortable } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
-import { ArrowDownUp, GripVertical } from "lucide-react";
-import { DragOverlay } from "@dnd-kit/core";
-import { Header } from "@tanstack/react-table";
+import { GripVertical } from "lucide-react";
 
 import { useHeaderStore } from "@/store/useHeaderStore";
 
+// This component makes the table header draggable.
 function DraggableTableHead<T>({
   header,
-  table,
 }: {
   header: Header<T, unknown>;
-  table: any;
 }) {
   const { attributes, isDragging, listeners, setNodeRef, transform } =
     useSortable({
       id: header.column.id,
     });
 
-  const style: {} = {
-    opacity: isDragging ? 0.8 : 1,
+  // Apply styles for dragging effect and transformations.
+  const style: React.CSSProperties = {
+    opacity: isDragging ? 0.95 : 1,
     position: "relative",
     transform: CSS.Translate.toString(transform),
-    transition: "width transform 0.2s ease-in-out",
-    zIndex: isDragging ? 1 : 0,
+    transition: "width transform 0.2s ease-in-out",                                              
+    zIndex: isDragging ? 10 : 0, 
+    boxShadow: isDragging ? '0px 10px 20px rgba(0, 0, 0, 0.1)' : 'none', 
+    backgroundColor: isDragging ? '#035afc' : '',
     width: header.getSize(),
+    color: isDragging ? 'white' : 'black',
   };
 
   return (
     <TableHead
       ref={setNodeRef}
       style={style}
-      className={`relative flex items-center text-gray-800 group bg-zinc-100/80 px-2 py-3 border-b border-gray-200 shadow-xs`}
+      className={`relative flex items-center  ${isDragging? 'border-b border-blue-500 rounded-t-sm shadow-lg' : ''}  group bg-zinc-100/80 px-2 py-3 border-b border-gray-200 shadow-xs`}
     >
       <div className="flex items-center justify-between w-full overflow-hidden">
-        <div className="flex items-center gap-0 text-gray-700 font-medium">
+        <div className={`flex items-center gap-0 ${isDragging? 'white' : 'text-gray-700'}  font-medium`}>
+          {/* The grip handle for dragging */}
           <button
             {...attributes}
             {...listeners}
-            className="cursor-grab active:cursor-grabbing text-gray-500 hover:text-gray-800"
+            className={`cursor-grab active:cursor-grabbing ${isDragging? 'white' : 'text-gray-700 hover:text-gray-800'} `}
           >
             <GripVertical className="h-4 w-4" />
           </button>
+          {/* Render the header content */}
           {header.isPlaceholder
             ? null
             : header.column.columnDef.header instanceof Function
@@ -85,6 +90,7 @@ function DraggableTableHead<T>({
             : header.column.columnDef.header}
         </div>
       </div>
+      {/* Resizer handle */}
       <div
         onMouseDown={header.getResizeHandler()}
         onTouchStart={header.getResizeHandler()}
@@ -96,7 +102,9 @@ function DraggableTableHead<T>({
           zIndex: 10,
         }}
       />
-      <div className="absolute right-0 top-5 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+      {/* Column menu that appears on hover */}
+      {!isDragging && (
+        <div className="absolute right-0 top-5 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
         <ColumnHeaderMenu
           column={header.column}
           sortDirection={header.column.getIsSorted()}
@@ -107,21 +115,57 @@ function DraggableTableHead<T>({
           }
         />
       </div>
+      )}
     </TableHead>
   );
 }
+
+// This new component makes the table cells draggable along with the header.
+function DraggableTableCell<T>({ cell }: { cell: Cell<T, unknown> }) {
+  const { isDragging, setNodeRef, transform } = useSortable({
+    id: cell.column.id,
+  });
+
+  // Apply styles for dragging effect and transformations.
+  // This ensures the cell moves with the header.
+  const style: React.CSSProperties = {
+    opacity: isDragging ? 0.95 : 1,
+    position: "relative",
+    transform: CSS.Translate.toString(transform),
+    transition: "width transform 0.2s ease-in-out", 
+    width: cell.column.getSize(),
+    zIndex: isDragging ? 10 : 0,
+    // boxShadow: isDragging ? '0px 10px 20px rgba(0, 0, 0, 0.1)' : 'none', 
+    backgroundColor: isDragging ? 'white' : '',
+  };
+
+  return (
+    <TableCell
+      ref={setNodeRef}
+      style={style}
+      className={`truncate px-3 py-2 text-sm text-gray-700 ${isDragging ? 'border-x border-blue-500' : null}`}
+    >
+      {cell.column.columnDef.cell instanceof Function
+        ? cell.column.columnDef.cell(cell.getContext())
+        : cell.column.columnDef.cell}
+    </TableCell>
+  );
+}
+
 
 interface DataTableProps {
   searchQuery: string;
 }
 
 const DataTable = ({ searchQuery }: DataTableProps) => {
-  const { tableData, error } = useMockData();
+  const [page, setPage] = useState(0);
+  const { tableData, error} = useMockData();
   const [columnOrder, setColumnOrder] = useState<string[]>([]);
-  const [draggedColumn, setDraggedColumn] = useState<string | null>(null);
-  const [tableHeight, setTableHeight] = useState(0);
   const { isHeaderVisible } = useHeaderStore();
   const [sorting, setSorting] = useState<SortingState>([]);
+  const [tableHeight, setTableHeight] = useState(0);
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const data = useMemo(() => {
     const rawData =
@@ -172,6 +216,10 @@ const DataTable = ({ searchQuery }: DataTableProps) => {
         size: 200,
         minSize: 100,
         maxSize: 800,
+        meta: {
+          FieldType: col.FieldType,
+          FieldName: col.FieldName,
+        },
         cell: (ctx: CellContext<any, any>) => {
           const value = ctx.getValue();
           return value !== "" && value !== undefined && value !== null
@@ -180,29 +228,28 @@ const DataTable = ({ searchQuery }: DataTableProps) => {
         },
       })) || [];
 
-    // Initialize column order
+    // Initialize column order from columns if not already set.
     if (cols.length > 0 && columnOrder.length === 0) {
-      setColumnOrder(cols.map((col: any) => col.id as string));
+      setColumnOrder(cols.map((c: any) => c.id as string));
     }
 
     return cols;
-  }, [tableData, columnOrder]);
+  }, [tableData]); // Removed columnOrder from dependency array to prevent re-renders
 
   useEffect(() => {
     const calculateHeight = () => {
-      const headerHeight = isHeaderVisible ? 112 : 56; // Assuming header height is 64px
+      const headerHeight = isHeaderVisible ? 112 : 56;
       const availableHeight = window.innerHeight - headerHeight;
       setTableHeight(availableHeight);
     };
 
     calculateHeight();
-
     window.addEventListener("resize", calculateHeight);
-
     return () => {
       window.removeEventListener("resize", calculateHeight);
     };
   }, [isHeaderVisible]);
+
 
   const table = useReactTable({
     data,
@@ -217,11 +264,6 @@ const DataTable = ({ searchQuery }: DataTableProps) => {
     getSortedRowModel: getSortedRowModel(),
     enableColumnResizing: true,
     columnResizeMode: "onChange",
-    enableMultiSort: false,
-    defaultColumn: {
-      minSize: 10,
-      maxSize: 1000,
-    },
   });
 
   const sensors = useSensors(
@@ -230,37 +272,33 @@ const DataTable = ({ searchQuery }: DataTableProps) => {
     useSensor(KeyboardSensor, {})
   );
 
+  // This function handles the end of a drag event.
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
-
     if (active && over && active.id !== over.id) {
-      setColumnOrder((columnOrder) => {
-        const oldIndex = columnOrder.indexOf(active.id as string);
-        const newIndex = columnOrder.indexOf(over.id as string);
-
-        if (oldIndex === -1 || newIndex === -1) return columnOrder;
-
-        return arrayMove(columnOrder, oldIndex, newIndex);
+      setColumnOrder((currentOrder) => {
+        const oldIndex = currentOrder.indexOf(active.id as string);
+        const newIndex = currentOrder.indexOf(over.id as string);
+        // arrayMove is a utility from @dnd-kit to reorder the array.
+        return arrayMove(currentOrder, oldIndex, newIndex);
       });
     }
-    setDraggedColumn(null);
   }
 
   return (
-    <div className="p-0" style={{ height: tableHeight, overflow: "auto" }}>
+    <div className="p-0" style={{ height: tableHeight, overflow: "auto" }} ref={scrollContainerRef}>
+      {/* DndContext provides the drag and drop functionality */}
       <DndContext
         sensors={sensors}
         collisionDetection={closestCenter}
         modifiers={[restrictToHorizontalAxis]}
         onDragEnd={handleDragEnd}
-        onDragStart={(event) => {
-          setDraggedColumn(event.active.id as string);
-        }}
       >
-        <Table style={{ width: table.getTotalSize() }}>
-          <TableHeader>
+        <Table style={{ width: table.getTotalSize() || "100%" }}>
+          <TableHeader className="sticky top-0 z-10 bg-white">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id} className="flex">
+                {/* SortableContext provides the context for draggable items */}
                 <SortableContext
                   items={columnOrder}
                   strategy={horizontalListSortingStrategy}
@@ -269,93 +307,36 @@ const DataTable = ({ searchQuery }: DataTableProps) => {
                     <DraggableTableHead
                       key={header.id}
                       header={header}
-                      table={table}
                     />
                   ))}
                 </SortableContext>
               </TableRow>
             ))}
           </TableHeader>
-            <TableBody>
-            {table.getRowModel().rows.map((row, index) => (
-              <TableRow
-                key={row.id}
-                className={`flex hover:bg-blue-50 transition-colors duration-200 border-b border-gray-200`}
-              >
-                {row.getVisibleCells().map((cell) => (
-                  <TableCell
-                    key={cell.id}
-                    style={{
-                      width: cell.column.getSize(),
-                      maxWidth: cell.column.getSize(),
-                    }}
-                    className="truncate px-3 py-2 text-sm text-gray-700"
-                  >
-                    {cell.column.columnDef.cell instanceof Function
-                      ? cell.column.columnDef.cell(cell.getContext())
-                      : cell.column.columnDef.cell}
-                  </TableCell>
-                ))}
+          <TableBody>
+            {table.getRowModel().rows.map((row) => (
+              <TableRow key={row.id} className="flex">
+                {/* 
+                  This is the key change. We wrap the cells of each row in a SortableContext.
+                  This makes the cells aware of the column order and allows them to be reordered
+                  horizontally along with the headers.
+                */}
+                <SortableContext
+                  items={columnOrder}
+                  strategy={horizontalListSortingStrategy}
+                >
+                  {row.getVisibleCells().map((cell) => (
+                    <DraggableTableCell key={cell.id} cell={cell} />
+                  ))}
+                </SortableContext>
               </TableRow>
             ))}
           </TableBody>
         </Table>
-        <DragOverlay>
-          {draggedColumn &&
-            (() => {
-              const draggedColumnDef =
-                table.getColumn(draggedColumn)?.columnDef;
-              const headerContext = table
-                .getHeaderGroups()[0]
-                .headers.find((h) => h.id === draggedColumn)
-                ?.getContext();
-              const headerContent =
-                draggedColumnDef?.header && headerContext
-                  ? typeof draggedColumnDef.header === "function"
-                    ? draggedColumnDef.header(headerContext)
-                    : draggedColumnDef.header
-                  : null;
-
-              return (
-                <div className="border-2 border-blue-600 rounded-xs">
-                  <Table
-                  style={{
-                    width: table.getColumn(draggedColumn)?.getSize(),
-                    overflow: "hidden",
-                  }}
-                >
-                  <TableHeader className="bg-blue-600 shadow-lg text-white">
-                    <TableRow className="text-white">
-                      <TableHead
-                        className={`px-4 py-0 bg-blue-600 text-white font-medium text-sm`}
-                      >
-                        {headerContent}
-                      </TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {table.getRowModel().rows.map((row) => (
-                      <TableRow key={row.id}>
-                        <TableCell
-                          style={{
-                            width: table.getColumn(draggedColumn)?.getSize(),
-                            maxWidth: table.getColumn(draggedColumn)?.getSize(),
-                          }}
-                          className="px-4 py-2 truncate bg-white border-b border-gray-200 text-sm text-gray-700 "
-                        >
-                          {row.getValue(draggedColumn)}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-                </div>
-              );
-            })()}
-        </DragOverlay>
       </DndContext>
     </div>
   );
 };
 
 export default DataTable;
+
